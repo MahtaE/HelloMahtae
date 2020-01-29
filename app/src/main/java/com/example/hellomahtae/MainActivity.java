@@ -23,8 +23,26 @@ public class MainActivity extends AppCompatActivity {
                         getResources().getColor(R.color.colorPrimary));
                 Log.i("LOGGING", "Button clicked");
 
-            }
 
+
+    }
+});
+        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.rootView).setBackgroundColor(getResources().getColor(
+                        R.color.orange));
+
+            }
         });
+        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((TextView) findViewById(R.id.textView)).setText("Goodbye");
+
+            }
+        });
+
+
     }
 }

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/rootView"
     android:background="@color/colorAccent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -17,15 +18,35 @@
         android:layout_marginTop="355dp"
         android:text="Hello from Mahta"
         android:textColor="@android:color/black"
-        android:textSize="26sp" />
+        android:textSize="26sp"/>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="172dp"
+        android:layout_below="@id/button3"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
         android:text="Change text color" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change view color"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:text="Change text" />
 
 </RelativeLayout>
