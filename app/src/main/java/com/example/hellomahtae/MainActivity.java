@@ -43,6 +43,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.rootView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //reset the text color back to black
+
+                ((TextView) findViewById(R.id.textView)).setTextColor(
+                        getResources().getColor(R.color.black));
+                //reset the background to colorAccent
+                findViewById(R.id.rootView).setBackgroundColor(getResources().
+                        getColor(R.color.colorAccent));
+                //reset the text back to Hello from Mahta
+                ((TextView) findViewById(R.id.textView)).setText("Hello from Mahta");
+            }
+        });
+        //grab the text the user inputted
+        //put the text into our text view once the "change text" button is clicked
 
     }
 }
